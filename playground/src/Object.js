@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 
 
-
 class Object extends Component {
     state = {
       stage: 0,
@@ -12,6 +11,7 @@ class Object extends Component {
       date: ""
     }
     };
+
   
   componentDidMount() {
   
@@ -58,10 +58,6 @@ class Object extends Component {
       runQuery(url, query)
     };
 
-    onSubmit = (fields) => {
-      console.log('Value in app: ', fields)
-     };
-
     render() {
      
 
@@ -70,6 +66,26 @@ class Object extends Component {
       <h1>{this.state.title}</h1>
       <p>{this.state.description}</p>
       <img src={this.state.img}></img>
+
+      <form>
+        <h2>Claim your object</h2>
+        <p>Do you want this object to be yours and yours only? 
+          Fill in your email and we’ll send all the information regarding the object to 
+          you and when and where it will be displayed! 
+          *No one else can be this object</p>
+          <ul>
+            <li>
+              <input
+              name="email"
+              placeholder="Email"
+              value={this.state.email}
+              onChange={e => this.setState({ email: e.target.value})}/>
+              </li> 
+              <li>
+                  <button >Claim object</button>
+              </li>
+          </ul>
+       </form>
       </div>
       );
     }

@@ -1,17 +1,29 @@
 import React from "react";
+import {Link, Redirect} from "react-router-dom";
 
 export default class Form extends React.Component {
   state = {
     firstName: "",
     lastName: "",
-    email: ""
+    email: "",
+    redirect:false
   };
 
-  onSubmit = (fields) => {
-    console.log('Value in app: ', fields)
-   };
+  onSubmit = (e) => {
+    this.setState({redirect:true})
+    this.props.verwerk(this.state);
+  }
+
+    // componentDidMount(){
+    //     this.props.verwerk(this.state)
+    // }
 
   render() {
+    if(this.state.redirect===true){
+        return <Redirect push to="/Object" />
+    } 
+    else{
+
     return (
       <form>
           <h1>Find your object</h1>
@@ -29,22 +41,21 @@ export default class Form extends React.Component {
           value={this.state.lastName}
           onChange={e => this.setState({ lastName: e.target.value})}
         /></li>
-       <li>
+       {/* <li>
          <input
           name="email"
           placeholder="Email"
           value={this.state.email}
           onChange={e => this.setState({ email: e.target.value})}
-        /></li>
+        /></li> */}
         <li>
-<button onClick={e => this.onSubmit(e)}>Submit</button></li>
-</ul>
+            <button onClick={e => this.onSubmit(e)}>Submit</button>
+        </li>
+    </ul>
        </form>
 
-    );
+    )};
   }
 }
 
-
-/* <Form onSubmit={fields => this.onSubmit(fields)}/> */
 
