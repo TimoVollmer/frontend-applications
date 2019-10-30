@@ -4,17 +4,13 @@ export default class Form extends React.Component {
   state = {
     firstName: "",
     lastName: "",
-    email: "",
-    password: ""
+    email: ""
   };
 
+  onSubmit = (fields) => {
+    console.log('Value in app: ', fields)
+   };
 
-  onSubmit = (e) => {
-      e.preventDefault();
-      this.props.onSubmit(this.state);
-      console.log(this.state);
-      
-  }
   render() {
     return (
       <form>
@@ -49,4 +45,6 @@ export default class Form extends React.Component {
   }
 }
 
+
+/* <Form onSubmit={fields => this.onSubmit(fields)}/> */
 

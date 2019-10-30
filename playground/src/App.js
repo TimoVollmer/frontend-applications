@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import Object from './Components/object.js';
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import Object from './Object.js';
 import './App.css';
+import Logo from './logo.svg';
 /*import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import { UserForm } from './Components/UserForm;    <UserForm />
 
 const routing = (
   <Router>
-    <div>
       <Route path="/" component={App} />
-      <Route path="/users" component={Form} />
-    </div>
+      <Route path="/object" component={Object} />
   </Router>
 )
-*/
+
 
 
 class App extends Component {
@@ -71,7 +71,8 @@ componentDidMount() {
     }
     runQuery(url, query)
   };
-  
+  */
+ class App extends Component {
 
   onSubmit = (fields) => {
     console.log('Value in app: ', fields)
@@ -79,14 +80,21 @@ componentDidMount() {
 
   render() {
 
-    console.log(this.state.img);
     return (
       <div className="App">
-      <Form onSubmit={fields => this.onSubmit(fields)}/>
-      <h1>{this.state.title}</h1>
-      <p>{this.state.description}</p>
-      <img src={this.state.img}></img>
+
+      <Router>
+            <Route exact path="/" component={ Form } />
+            <Route path="/object" component={Object} />
+      </Router>
+
+
+      {/* <Form onSubmit={fields => this.onSubmit(fields)}/> */}
+
       </div>
+
+     
+     
     );
   }
 }
