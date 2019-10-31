@@ -138,7 +138,8 @@ index.js
 
 ## Built With
 
-* React
+* [React](https://reactjs.org) - The web framework used
+* [SPARQL](https://en.wikipedia.org/wiki/SPARQL) - Protocol and RDF Query Language
 
 ## Credits
 
