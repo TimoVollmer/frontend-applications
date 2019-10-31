@@ -141,3 +141,13 @@ h1, h2{
   transition: 1s;
   /* transform: rotateY(150deg); */
 }
+
+.claim {
+  display: inline-block;
+  width: 62%;
+
+}
+
+#claim {
+  text-align: center;
+}

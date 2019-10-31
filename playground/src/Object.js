@@ -12,11 +12,6 @@ class Object extends Component {
       date: ""
     }
     };
-
-    verwerk = (data)=>{
-      console.log(data)
-  }
-
     
   
   componentDidMount() {
@@ -87,9 +82,11 @@ class Object extends Component {
           <pre>{this.props.data}</pre>
 
       <form>
-        <h2>Claim your object</h2>
-        <p>{this.props.firstName}, do you want {this.state.title} to be yours and yours only? <br/>
+      <div className='claim'>
+        <h2 id="claim">Claim your object</h2>
+        <p id="claim"> Do you want <strong>{this.state.title}</strong> to be yours and yours only? 
           Fill in your email and we’ll send all the information regarding the object and when and where it will be displayed!</p>
+          </div>
           <ul>
             <li>
               <input type="email"
