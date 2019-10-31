@@ -1,2 +1,6 @@
 
 node_modules/react/.DS_Store
+node_modules
+package-lock.json
+index.js
+
