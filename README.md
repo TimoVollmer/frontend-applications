@@ -18,6 +18,7 @@
   - [Deployment](#Deployment) 
   - [Gitignore](#Gitignore)
 - [Built With](#Built-With)
+-[Acknowledgments](#Acknowledgments)
 - [License](#License)
   
 ## Live demo
@@ -141,8 +142,10 @@ index.js
 * [React](https://reactjs.org) - The web framework used
 * [SPARQL](https://en.wikipedia.org/wiki/SPARQL) - Protocol and RDF Query Language
 
-## Credits
-
+## Acknowledgments
+* Staff Members of Nationaal Museum van Wereldculturen: Ivo Zandhuis & Cindy Zalm
+* Teachers of Communication and Multimedia Design (CMD) Amsterdam: Laurens Aarnoudse & Danny de Vries
+* Group members during class frontend-applications 
 
 # License
 
