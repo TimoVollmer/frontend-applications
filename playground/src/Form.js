@@ -1,6 +1,6 @@
 import React from "react";
 import {Redirect} from "react-router-dom";
-import './Form.css';
+import './Components/Form.css';
 
 export default class Form extends React.Component {
   state = {

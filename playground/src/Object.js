@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import './Object.css';
 
-// Stopt de values van de array in het betreffende variabele.
+// Stopt de values van de array in het betreffende 'variabele'.
 class Object extends Component {
     state = {
       stage: 0,
@@ -12,7 +11,6 @@ class Object extends Component {
       date: ""
     }
     };
-    
   
   componentDidMount() {
   
@@ -45,7 +43,6 @@ class Object extends Component {
               var item = results[Math.floor(Math.random() * results.length)];
               itemArray.push(item);
             }
-            console.log(itemArray);
             
             //Zet een state neer; haalt de waarde op uit de array van de betreffende labels
             this.setState({

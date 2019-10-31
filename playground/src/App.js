@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Form from './Form';
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import Object from './Object.js';
-import Footer from './Components/Footer.js';
+
+import Form from './Form';
+import Object from './Object';
+import Footer from './Components/Footer';
 import './App.css';
 
  class App extends Component {
@@ -10,7 +11,6 @@ import './App.css';
   verwerk = (data)=>{
       console.log(data)
   }
-
 
   render() {
 
