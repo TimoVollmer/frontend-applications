@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './Object.css';
 
 
 class Object extends Component {
@@ -11,7 +12,7 @@ class Object extends Component {
       date: ""
     }
     };
-
+    
   
   componentDidMount() {
   
@@ -59,20 +60,24 @@ class Object extends Component {
     };
 
     render() {
-     
+      document.body.style.backgroundColor = "black";
 
     return (
       <div className="App">
-      <h1>{this.state.title}</h1>
-      <p>{this.state.description}</p>
-      <img src={this.state.img}></img>
+          <div class='box a'>
+      <h1>{this.state.title}</h1></div>
+      <div class='box d'>
+      <p><strong>{this.state.date}</strong></p></div>
+      <div class='box b'>
+      <p>{this.state.description}</p></div>
+          <a href={this.state.img}>
+          <div class='box c'>
+      <img src={this.state.img}></img></div></a>
 
       <form>
         <h2>Claim your object</h2>
-        <p>Do you want this object to be yours and yours only? 
-          Fill in your email and we’ll send all the information regarding the object to 
-          you and when and where it will be displayed! 
-          *No one else can be this object</p>
+        <p>{this.props.firstName}, do you want {this.state.title} to be yours and yours only? <br/>
+          Fill in your email and we’ll send all the information regarding the object and when and where it will be displayed!</p>
           <ul>
             <li>
               <input

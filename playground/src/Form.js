@@ -1,5 +1,6 @@
 import React from "react";
 import {Link, Redirect} from "react-router-dom";
+import './Form.css';
 
 export default class Form extends React.Component {
   state = {
@@ -25,8 +26,10 @@ export default class Form extends React.Component {
     else{
 
     return (
+      <div className="Form">
+        <img src={require('./Components/Images/07.jpg')} className="background"/>
       <form>
-          <h1>Find your object</h1>
+          <h1>Find the object that matches you, claim it and share it!</h1>
           <ul>
         <li><input
           name="firstName"
@@ -49,11 +52,11 @@ export default class Form extends React.Component {
           onChange={e => this.setState({ email: e.target.value})}
         /></li> */}
         <li>
-            <button onClick={e => this.onSubmit(e)}>Submit</button>
+            <button onClick={e => this.onSubmit(e)}>Find my object</button>
         </li>
     </ul>
        </form>
-
+       </div>
     )};
   }
 }

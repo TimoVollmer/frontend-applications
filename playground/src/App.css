@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  
 }
 
 .App-logo {
@@ -21,13 +24,6 @@
   color: #09d3ac;
 }
 
-body {
-  background-color: white;
-  margin: 100px auto;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-
-}
 /*
 form {
 
@@ -45,49 +41,103 @@ form {
   opacity: 0.9;
 }*/
 
-input {
-  border-radius: 4em;
-  margin: 1em;
-  width: 30%;
-  height: 3em;
-  border: none;
-  font-size: 1em;
-  text-align: center;
-  
-}
-
-li {
-  list-style: none;
-  
-}
-
-h1 {
-  color: black;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-
-
-button {
-  height: 4em;
-  width: 10%;
-  background-color: #141519;
-  -webkit-border-radius: 45px;
-     -moz-border-radius: 45px;
-          border-radius: 45px;
+#Footer {
+  width: 100%;
   position: relative;
   text-align: center;
-  font-weight: bold;
+  margin-top: 10em;
+ 
+}
+
+#Footer > img {
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.background {
+  z-index: -1;
+  /* position: absolute; */
+  /* margin-left: 50%; */
+  width: 60%;
+}
+
+p {
   color: white;
-  margin-top: 10px;
-  -webkit-transition: background .2s;
-     -moz-transition: background .2s;
-       -o-transition: background .2s;
-          transition: background .2s;
-  cursor: pointer;
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+}
+
+img {
+  width: 60%;
+  height: 40%;
+}
+
+h1, h2{
+  color: white;
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+}
+
+.box {
+  width: 60%;
+  height: 60%;
+  padding: 80px 0 0px 10px;
+
+}
+.box.a {
+  position: relative;
+  z-index: 1;
+  margin-left: 40px;
+  background-color: blue;
+  background-color:rgba(38, 0, 255, 0.822);
+ 
+}
+.box.b {
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+  transition: ease-in-out;
+  transition: 2s;
+}
+
+.box.d {
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+  transition: ease-in-out;
+  transition: 2s;
+}
+.box.c img{
+  position: relative;
+  margin-top: -20em;
+  margin-left: 28em;
+  transition: ease-in-out;
+  transition: 2s;
+  z-index: -1;
+  transform: rotateY(20deg);
+}
+
+.box.b:hover {
+  /* margin: 1%; */
+  transition: ease-in-out;
+  transition: 2s;
+  background-color:rgba(0, 0, 0, 0.623);
+}
+
+.box.c:hover {
+  /* margin: 1em; */
+  transition: ease-in-out;
+  transition: 2s;
+  /* z-index: 6; */
+  /* transform: rotateY(+170deg); */
+  /* transform: scale(1.06); */
+} 
+
+.box.c {
+  transition: ease-in-out;
+  transition: 1s;
+  /* transform: rotateY(150deg); */
 }
