@@ -14,7 +14,7 @@
 - [Installation](#Installation)
   - [Prerequisites](#Prerequisites)
   - [Installation of the app](#Installation-of-the-web-app)
-  -[Usage](#Usage)
+  - [Usage](#Usage)
   - [Deployment](#Deployment) 
   - [Gitignore](#Gitignore)
 - [Built With](#Built-With)
