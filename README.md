@@ -24,8 +24,7 @@
 [Live demo](https://github.com/TimoVollmer/frontend-applications.git)
 
 ## Description 
-
-Description
+The web app matches a user with an object based upon there first name and last name. It retrieves these object from the 'Nationaal Museum van Wereldculturen' data base via an API. The object that is matched with the user can than be 'claimed' by the user so that no other user can be matched with this perticular object. The user will also receive all the information regarding the object and when and where it will be displayed. 
 
 ## Features 
 
