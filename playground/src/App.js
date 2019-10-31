@@ -7,10 +7,10 @@ import './App.css';
 
  class App extends Component {
 
-   
   verwerk = (data)=>{
       console.log(data)
   }
+
 
   render() {
 

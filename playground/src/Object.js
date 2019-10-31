@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './Object.css';
 
-
+// Stopt de values van de array in het betreffende variabele.
 class Object extends Component {
     state = {
       stage: 0,
@@ -12,6 +12,11 @@ class Object extends Component {
       date: ""
     }
     };
+
+    verwerk = (data)=>{
+      console.log(data)
+  }
+
     
   
   componentDidMount() {
@@ -47,8 +52,8 @@ class Object extends Component {
             }
             console.log(itemArray);
             
+            //Zet een state neer; haalt de waarde op uit de array van de betreffende labels
             this.setState({
-             
                 img: item.imgUrl.value,
                 title: item.titel.value,
                 date: item.datum.value,
@@ -79,6 +84,7 @@ class Object extends Component {
               <img src={this.state.img}></img>
             </div>
           </a>
+          <pre>{this.props.data}</pre>
 
       <form>
         <h2>Claim your object</h2>
@@ -86,7 +92,7 @@ class Object extends Component {
           Fill in your email and we’ll send all the information regarding the object and when and where it will be displayed!</p>
           <ul>
             <li>
-              <input
+              <input type="email"
               name="email"
               placeholder="Email"
               value={this.state.email}

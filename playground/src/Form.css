@@ -11,7 +11,7 @@ body {
   }
 
   input {
-    border-radius: 4em;
+    border-radius: 1em;
     margin: 1em;
     width: 30%;
     height: 3em;
@@ -41,10 +41,10 @@ body {
   button {
     height: 4em;
     width: 10%;
-    background-color: #141519;
-    -webkit-border-radius: 45px;
+    background-color: #e94e55;
+    /* -webkit-border-radius: 45px;
        -moz-border-radius: 45px;
-            border-radius: 45px;
+            border-radius: 45px; */
     position: relative;
     text-align: center;
     font-weight: bold;
@@ -55,5 +55,14 @@ body {
          -o-transition: background .2s;
             transition: background .2s;
     cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition: 1s;
   }
 
+  button:hover {
+    opacity: 1;
+    transition: ease-in-out;
+    transition: 1s;
+  }

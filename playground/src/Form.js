@@ -10,12 +10,14 @@ export default class Form extends React.Component {
     redirect:false
   };
 
+  // Veranderd de state van redirect van in eerste instantie false naar true; waardoor de Route werkt
   onSubmit = (e) => {
     this.setState({redirect:true})
-    this.props.verwerk(this.state);
+    this.props.verwerk(this.state); // Plaatst de waarde van this.state in verwerk; een functie in App.jss te vinden
   }
 
   render() {
+    document.body.style.backgroundColor = "white";
     if(this.state.redirect===true){
         return <Redirect push to="/Object" />
     } 
@@ -29,6 +31,9 @@ export default class Form extends React.Component {
                 <ul>
                   <li>
                     <input
+                    type="text"
+                    min="2" 
+                    max="50"
                     name="firstName"
                     placeholder="First name"
                     value={this.state.firstName}
@@ -42,7 +47,7 @@ export default class Form extends React.Component {
                     onChange={e => this.setState({ lastName: e.target.value})}/>
                   </li>
                   <li>
-                      <button onClick={e => this.onSubmit(e)}>Find my object</button>
+                    <button onClick={e => this.onSubmit(e)}>Find my object</button>
                   </li>
                 </ul>
         </form>
