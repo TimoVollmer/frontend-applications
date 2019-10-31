@@ -64,14 +64,14 @@ class Object extends Component {
 
     return (
       <div className="App">
-          <div class='box a'>
+          <div className='box a'>
       <h1>{this.state.title}</h1></div>
-      <div class='box d'>
+      <div className='box d'>
       <p><strong>{this.state.date}</strong></p></div>
-      <div class='box b'>
+      <div className='box b'>
       <p>{this.state.description}</p></div>
           <a href={this.state.img}>
-          <div class='box c'>
+          <div className='box c'>
       <img src={this.state.img}></img></div></a>
 
       <form>
@@ -87,7 +87,7 @@ class Object extends Component {
               onChange={e => this.setState({ email: e.target.value})}/>
               </li> 
               <li>
-                  <button >Claim object</button>
+                  <button>Claim object</button>
               </li>
           </ul>
        </form>
