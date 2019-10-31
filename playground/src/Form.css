@@ -1,0 +1,68 @@
+body {
+    background-color:white;
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url(./Components/Images/Depotfoto.jpg);  */
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: top;
+
+  }
+
+  input {
+    border-radius: 1em;
+    margin: 1em;
+    width: 30%;
+    height: 3em;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    
+  }
+  
+  li {
+    list-style: none;
+    
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
+  
+  
+  button {
+    height: 4em;
+    width: 10%;
+    background-color: #e94e55;
+    /* -webkit-border-radius: 45px;
+       -moz-border-radius: 45px;
+            border-radius: 45px; */
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    -webkit-transition: background .2s;
+       -moz-transition: background .2s;
+         -o-transition: background .2s;
+            transition: background .2s;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    transition: ease-in-out;
+    transition: 1s;
+  }
+
+  button:hover {
+    opacity: 1;
+    transition: ease-in-out;
+    transition: 1s;
+  }
