@@ -46,6 +46,7 @@ class Object extends Component {
               itemArray.push(item);
             }
             console.log(itemArray);
+            
             this.setState({
              
                 img: item.imgUrl.value,
@@ -65,14 +66,19 @@ class Object extends Component {
     return (
       <div className="App">
           <div className='box a'>
-      <h1>{this.state.title}</h1></div>
+            <h1>{this.state.title}</h1>
+          </div>
       <div className='box d'>
-      <p><strong>{this.state.date}</strong></p></div>
+            <p><strong>{this.state.date}</strong></p>
+      </div>
       <div className='box b'>
-      <p>{this.state.description}</p></div>
+            <p>{this.state.description}</p>
+      </div>
           <a href={this.state.img}>
-          <div className='box c'>
-      <img src={this.state.img}></img></div></a>
+            <div className='box c'>
+              <img src={this.state.img}></img>
+            </div>
+          </a>
 
       <form>
         <h2>Claim your object</h2>
@@ -85,10 +91,10 @@ class Object extends Component {
               placeholder="Email"
               value={this.state.email}
               onChange={e => this.setState({ email: e.target.value})}/>
-              </li> 
-              <li>
-                  <button>Claim object</button>
-              </li>
+            </li> 
+            <li>
+              <button>Claim object</button>
+            </li>
           </ul>
        </form>
       </div>
@@ -96,4 +102,4 @@ class Object extends Component {
     }
   };
   
-  export default Object;
+export default Object;

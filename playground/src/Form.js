@@ -15,10 +15,6 @@ export default class Form extends React.Component {
     this.props.verwerk(this.state);
   }
 
-    // componentDidMount(){
-    //     this.props.verwerk(this.state)
-    // }
-
   render() {
     if(this.state.redirect===true){
         return <Redirect push to="/Object" />
@@ -28,35 +24,29 @@ export default class Form extends React.Component {
     return (
       <div className="Form">
         <img src={require('./Components/Images/07.jpg')} className="background"/>
-      <form>
+        <form>
           <h1>Find the object that matches you, claim it and share it!</h1>
-          <ul>
-        <li><input
-          name="firstName"
-          placeholder="First name"
-          value={this.state.firstName}
-          onChange={e => this.setState({ firstName: e.target.value})}
-        /></li>
-       <li>
-          <input
-          name="lastName"
-          placeholder="Last name"
-          value={this.state.lastName}
-          onChange={e => this.setState({ lastName: e.target.value})}
-        /></li>
-       {/* <li>
-         <input
-          name="email"
-          placeholder="Email"
-          value={this.state.email}
-          onChange={e => this.setState({ email: e.target.value})}
-        /></li> */}
-        <li>
-            <button onClick={e => this.onSubmit(e)}>Find my object</button>
-        </li>
-    </ul>
-       </form>
-       </div>
+                <ul>
+                  <li>
+                    <input
+                    name="firstName"
+                    placeholder="First name"
+                    value={this.state.firstName}
+                    onChange={e => this.setState({ firstName: e.target.value})}/>
+                  </li>
+                  <li>
+                    <input
+                    name="lastName"
+                    placeholder="Last name"
+                    value={this.state.lastName}
+                    onChange={e => this.setState({ lastName: e.target.value})}/>
+                  </li>
+                  <li>
+                      <button onClick={e => this.onSubmit(e)}>Find my object</button>
+                  </li>
+                </ul>
+        </form>
+      </div>
     )};
   }
 }
