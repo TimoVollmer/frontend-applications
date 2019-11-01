@@ -71,8 +71,8 @@ h1, h2{
   position: relative;
   z-index: 1;
   margin-left: 40px;
-  background-color: blue;
-  background-color:rgba(38, 0, 255, 0.822);
+  /* background-color:rgba(38, 0, 255, 0.822); */
+  background-color:rgba(0, 167, 153, 0.685);
  
 }
 .box.b {
@@ -123,5 +123,10 @@ h1, h2{
 }
 
 #claim {
+  text-align: center;
+}
+
+#title {
+  color: black;
   text-align: center;
 }

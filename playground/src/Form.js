@@ -27,7 +27,7 @@ export default class Form extends React.Component {
       <div className="Form">
         <img src={require('./Components/Images/07.jpg')} className="background"/>
         <form>
-          <h1>Find the object that matches you, claim it and share it!</h1>
+          <h2 id="title">Find the object that matches you, claim it and share it!</h2>
                 <ul>
                   <li>
                     <input
