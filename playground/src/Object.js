@@ -4,12 +4,10 @@ import React, {Component} from 'react'
 class Object extends Component {
     state = {
       stage: 0,
-      render: {
       img: "",
       title: "",
       description: "",
       date: ""
-    }
     };
   
   componentDidMount() {
